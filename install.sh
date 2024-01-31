@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-sudo apt install xorg dunst desktop-base xserver-xorg-video-intel stterm suckless-tools build-essential libx11-dev libxinerama-dev libxft-dev git vim libwebkit2gtk-4.0-dev neovim fonts-font-awesome nitrogen wget feh htop rofi pluma firefox-esr pavucontrol -y
+sudo apt install xorg dunst fonts-jetbrains-mono desktop-base xserver-xorg-video-intel stterm suckless-tools build-essential libx11-dev libxinerama-dev libxft-dev git vim libwebkit2gtk-4.0-dev neovim fonts-font-awesome nitrogen wget feh htop rofi pluma firefox-esr pavucontrol -y
 
 sudo mkdir /etc/X11/xorg.conf.d/
 sudo touch /etc/X11/xorg.conf.d/20-intel.conf

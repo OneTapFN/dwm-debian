@@ -11,8 +11,8 @@ sudo echo '  Option "TearFree" "true"' >> /etc/X11/xorg.conf.d/20-intel.conf
 sudo echo '  Option "TripleBuffer" "On"' >> /etc/X11/xorg.conf.d/20-intel.conf
 sudo echo 'EndSection' >> /etc/X11/xorg.conf.d/20-intel.conf
 
-mkdir /home/$HOME/.config
-cp -r ./config/* /home/$HOME/.config
+mkdir /$HOME/.config
+cp -r ./config/* /$HOME/.config
 
 cd ./dwm-config/
 tar -xf ./dwm-config.tar.gz
@@ -44,8 +44,8 @@ cd ..
 cd ./st-0.9/
 sudo make clean install
 
-cp ./xinitrc /home/$HOME/.xinitrc
-chmod +x /home/$HOME/.xinitrc
+cp ./xinitrc /$HOME/.xinitrc
+chmod +x /$HOME/.xinitrc
 
 sudo touch /etc/X11/xorg.conf.d/90-touchpad.conf
 sudo echo 'Section "InputClass"' >> /etc/X11/xorg.conf.d/90-touchpad.conf
@@ -57,7 +57,7 @@ sudo echo '        Option "TappingButtonMap" "lrm"' >> /etc/X11/xorg.conf.d/90-t
 sudo echo '        Option "ScrollMethod" "twofinger"' >> /etc/X11/xorg.conf.d/90-touchpad.conf
 sudo echo 'EndSection' >> /etc/X11/xorg.conf.d/90-touchpad.conf
 
-mkdir /home/$HOME/.git
-cp -r ./dwm-config /home/$HOME/.git
-cp -r ./st-0.9 /home/$HOME/.git
-chmod +x /home/$HOME/.git/dwm-config/bar.sh
+mkdir /$HOME/.git
+cp -r ./dwm-config /$HOME/.git
+cp -r ./st-0.9 /$HOME/.git
+chmod +x /$HOME/.git/dwm-config/bar.sh
